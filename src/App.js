@@ -1,14 +1,20 @@
-import './App.css';
+import "./tailwind.css"
+import Button from "./components/Button";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-      <h2>Hello seçkin</h2>
-      <img src='./logo192.png'></img>
+let name = "Seçkin"
+let surname = "Bulgur"
 
-      </header>
-    </div>
+  return (
+   <main>
+    <Button variant ="default">Default</Button>
+    <Button variant ="success">Success</Button>
+    <Button variant ="danger">Danger</Button>
+    <Button variant ="warning">Warning</Button>
+
+    <h1>{name}, {surname.toLocaleUpperCase()}</h1>
+   </main>
+    
   );
 }
 
